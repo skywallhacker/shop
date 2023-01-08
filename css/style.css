@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+}
+.header .href {
+  display: flex;
+  gap: 24px;
+}
+.header a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+}
+.header a:hover {
+  color: gold;
+}
+
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.present {
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  min-height: 504px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.present h1 {
+  font-weight: 400;
+  font-size: 43px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+.present h3 {
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 28px;
+  letter-spacing: 0.8px;
+  color: #FFFFFF;
+}
+
+.design {
+  min-height: 313px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.design h1 {
+  font-weight: 400;
+  font-size: 43px;
+  text-align: center;
+  margin-bottom: 23px;
+}
+.design p {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  color: #A0A0A0;
+  margin-bottom: 26px;
+}
+.design h3 {
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 1.4px;
+}
+
+.grid .grid_box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+.grid .elem {
+  background-image: url(../img/foto_grid.png);
+  min-height: 441px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  margin-bottom: 130px;
+  background-position: center;
+}
+.grid .div {
+  position: absolute;
+  bottom: -118px;
+}
+.grid .elem:nth-child(2) {
+  background-image: url(../img/grid_foto.png);
+}
+.grid img {
+  margin-bottom: 48px;
+}
+.grid h3 {
+  font-weight: 400;
+  font-size: 27px;
+  text-align: center;
+  margin-bottom: 23px;
+}
+.grid p {
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 1.4px;
+}
+
+.slide h3 {
+  font-weight: 400;
+  font-size: 33px;
+  text-align: center;
+  margin-top: 130px;
+}
+.slide h4 {
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  color: #A0A0A0;
+  margin-top: 16px;
+}
+.slide .sircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 52px;
+}
+.slide .item {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #000;
+}
+.slide .slide_shop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 24px;
+  gap: 25px;
+}
+.slide .shop {
+  background-image: url(../img/phone.png);
+  min-height: 434px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: end;
+}
+.slide .shop:nth-child(2) {
+  background-image: url(../img/laptop.png);
+}
+.slide .shop:nth-child(3) {
+  background-image: url(../img/planshet.png);
+}
+.slide .shop:nth-child(4) {
+  background-image: url(../img/monoblock.png);
+}
+.slide img {
+  margin-bottom: 23px;
+}
+.slide p {
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.7px;
+  color: #A0A0A0;
+}
+.slide .xamro {
+  width: 100%;
+  background: white;
+  padding-top: 23px;
+}

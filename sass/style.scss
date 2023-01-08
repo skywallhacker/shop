@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$color : #FFFFFF;
+
+$corpcolor: #A0A0A0;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+
+    .href {
+        display: flex;
+        gap: 24px;
+    }
+
+    a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        text-decoration: none;
+        color: #000000;
+        text-transform: uppercase;
+
+        &:hover {
+            color: gold;
+        }
+    }
+}
+
+.container {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.present {
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    min-height: 504px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-weight: 400;
+        font-size: 43px;
+        text-align: center;
+        color: $color;
+        margin-bottom: 12px;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 28px;
+        letter-spacing: 0.8px;
+        color: $color;
+    }
+
+}
+
+.design {
+
+    min-height: 313px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-weight: 400;
+        font-size: 43px;
+        text-align: center;
+        margin-bottom: 23px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 0.8px;
+        color: $corpcolor;
+        margin-bottom: 26px;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 13px;
+        text-align: center;
+        letter-spacing: 1.4px;
+    }
+}
+
+.grid {
+
+    .grid_box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .elem {
+        background-image: url(../img/foto_grid.png);
+        min-height: 441px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
+        margin-bottom: 130px;
+        background-position: center;
+    }
+
+    .div {
+        position: absolute;
+        bottom: -118px;
+    }
+
+    .elem:nth-child(2) {
+        background-image: url(../img/grid_foto.png);
+    }
+
+
+    img {
+        margin-bottom: 48px;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 27px;
+        text-align: center;
+        margin-bottom: 23px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 13px;
+        text-align: center;
+        letter-spacing: 1.4px;
+    }
+}
+
+.slide {
+
+    h3 {
+        font-weight: 400;
+        font-size: 33px;
+        text-align: center;
+        margin-top: 130px;
+    }
+
+    h4 {
+        font-weight: 400;
+        font-size: 15px;
+        text-align: center;
+        letter-spacing: 0.8px;
+        color: $corpcolor;
+        margin-top: 16px;
+    }
+
+    .sircle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 52px;
+    }
+
+    .item {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #000;
+    }
+
+    .slide_shop {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 24px;
+        gap: 25px;
+    }
+
+    .shop {
+        background-image: url(../img/phone.png);
+        min-height: 434px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: end;
+        &:nth-child(2) {
+            background-image: url(../img/laptop.png);
+        }
+        &:nth-child(3) {
+            background-image: url(../img/planshet.png);
+        }
+        &:nth-child(4) {
+            background-image: url(../img/monoblock.png);
+        }
+    }
+
+    img {
+        margin-bottom: 23px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 13px;
+        letter-spacing: 0.7px;
+        color: $corpcolor;
+    }
+
+    .xamro{
+        width: 100%;
+        background: white;
+        padding-top: 23px;
+    }
+
+
+
+}
